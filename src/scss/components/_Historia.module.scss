@@ -1,0 +1,36 @@
+.historia {
+     min-height: 300px;
+     width: 100%;
+     background-color: var(--primary-color);
+}
+
+.historiaContainer {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.historiaTxt {
+     // background-color: red;
+     color: var(--bg-color);
+     font-size: 23px;
+     font-weight: 400;
+     line-height: 1.76;
+     padding: 45px;
+     padding-top: 45px;
+     max-width: 750px;
+     text-align: center;
+
+     span {
+          color: #ee4037;
+          text-decoration: underline;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+     }
+}
+
+@media screen and (min-width: 768px) {
+
+     .historiaTxt {
+          font-size: 33px;
+     }
+}

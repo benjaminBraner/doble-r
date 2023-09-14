@@ -1,0 +1,29 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     // font-family: 'Rubik', 'sans-serif';
+     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+html {
+     scroll-behavior: auto;
+}
+
+li {
+     list-style: none;
+}
+
+a {
+     text-decoration: none;
+
+     :visited {
+          color: inherit;
+     }
+}
+
+button {
+     border: none;
+     background: none;
+     cursor: pointer;
+}

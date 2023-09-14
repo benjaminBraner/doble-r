@@ -1,0 +1,166 @@
+.header {
+     width: 100%;
+     // background-color: var(--bg-second-color);
+     height: var(--navbar-height);
+     // opacity: 0.5;
+     position: fixed;
+     top: 0;
+     right: 0;
+     z-index: 999;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: all .35s ease;
+}
+
+.header.sticky {
+     background-color: #000;
+
+
+
+}
+
+.logoCont {
+     // background-color: red;
+     display: flex;
+     flex-wrap: nowrap;
+     align-items: center;
+     justify-content: center;
+
+     h3 {
+          display: inline-block;
+     }
+
+     img {
+          width: 24px;
+          margin-right: 5px;
+     }
+
+}
+
+.navbar {
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 100%;
+     padding: 0 16px;
+     max-width: 1300px;
+     width: 100%;
+}
+
+
+.navLink {
+     color: #000;
+}
+
+.navMenu {
+     transition: 0.6s;
+     position: fixed;
+     top: 86px;
+     background-color: #fff;
+     left: 16px;
+     right: 16px;
+     display: flex;
+     height: calc(100vh - 110px);
+     border-radius: 6px;
+     padding: 30px;
+     flex-direction: column;
+     gap: 40px;
+     z-index: 999;
+     top: -999px;
+
+     li {
+          font-weight: 500;
+          cursor: pointer;
+          font-size: 25px;
+
+          p {
+               font-size: 15px;
+               color: #afafaf;
+          }
+     }
+
+
+}
+
+.logoMenu {
+     display: block;
+}
+
+
+.navMenu.active {
+     top: 86px;
+
+     li {
+          color: #000;
+     }
+}
+
+.desactiveMenu {
+     transition: 5s;
+     top: 300px;
+}
+
+// tablet size
+@media screen and (min-width: 768px) {
+
+     .header.sticky {
+          .navLink {
+               color: #ccc;
+          }
+
+          li:nth-child(4) {
+               a {
+                    color: var(--nav-contact-color);
+               }
+          }
+     }
+
+
+     .navMenu {
+          all: unset;
+          display: flex;
+          gap: 50px;
+          justify-content: center;
+          align-items: center;
+
+          li {
+               all: unset;
+               // color: #ce1919;
+
+               p {
+                    all: unset;
+                    display: none;
+               }
+
+
+               .navLink {
+                    font-size: 20px;
+                    color: #fff;
+                    color: #585757;
+
+               }
+
+               // a {
+               //      color: #a92b2b;
+               // }
+          }
+
+          li:nth-child(4) {
+               border: 2px solid var(--primary-color);
+               background-color: var(--primary-color);
+               padding: 6px 30px;
+               border-radius: 40px;
+
+               a {
+                    color: var(--nav-contact-color);
+               }
+          }
+     }
+
+     .logoMenu {
+          display: none;
+     }
+
+}

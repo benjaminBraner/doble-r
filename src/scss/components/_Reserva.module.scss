@@ -1,0 +1,71 @@
+.contact {
+     min-height: calc(100vh - 70px);
+     background-color: #000000;
+
+     h4 {
+          color: #ccc;
+          font-size: 35px;
+          font-weight: 300;
+          margin-bottom: 40px;
+
+     }
+}
+
+.contact>div {
+     margin: 0 auto;
+     padding: 20px;
+     max-width: 1300px;
+}
+
+.formContainer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: max-content;
+}
+
+.contactForm {
+     display: flex;
+     flex-direction: column;
+     // gap: 20px;
+     max-width: 450px;
+     min-width: 200px;
+
+     label {
+          font-weight: 500;
+          color: #ccc;
+     }
+}
+
+.contactInput,
+.fadeSelect {
+     padding: 15px;
+     border: 1.5px solid #000;
+     border-radius: 7px;
+     font-size: 20px;
+     outline: none;
+     margin-bottom: 20px;
+     background-color: #ededed;
+}
+
+.contactInput:nth-child(2),
+.contactInput:nth-child(4),
+.contactInput:nth-child(6) {
+     margin-bottom: 5px;
+     margin-top: 5px;
+}
+
+.contactInput:nth-child(8) {
+     margin-top: 5px;
+}
+
+.btnSendForm {
+     background-color: var(--primary-color);
+     color: #fff;
+     padding: 15px;
+     border: none;
+     border-radius: 7px;
+     font-size: 20px;
+     cursor: pointer;
+}
