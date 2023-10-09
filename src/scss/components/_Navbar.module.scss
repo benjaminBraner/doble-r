@@ -1,8 +1,6 @@
 .header {
      width: 100%;
-     // background-color: var(--bg-second-color);
      height: var(--navbar-height);
-     // opacity: 0.5;
      position: fixed;
      top: 0;
      right: 0;
@@ -15,17 +13,14 @@
 
 .header.sticky {
      background-color: #000;
-
-
-
 }
 
 .logoCont {
-     // background-color: red;
      display: flex;
      flex-wrap: nowrap;
      align-items: center;
      justify-content: center;
+     cursor: pointer;
 
      h3 {
           display: inline-block;
@@ -127,7 +122,6 @@
 
           li {
                all: unset;
-               // color: #ce1919;
 
                p {
                     all: unset;
@@ -141,16 +135,12 @@
                     color: #585757;
 
                }
-
-               // a {
-               //      color: #a92b2b;
-               // }
           }
 
           li:nth-child(4) {
                border: 2px solid var(--primary-color);
                background-color: var(--primary-color);
-               padding: 6px 30px;
+               padding: 3px 30px;
                border-radius: 40px;
 
                a {

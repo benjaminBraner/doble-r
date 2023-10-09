@@ -25,84 +25,83 @@ export const Trabajos = () => {
 
      const clickBtnOrdenar = (e) => {
           const corte = e.target.parentNode.parentNode.parentNode.lastChild.textContent;
-          setCorte(corte)
+          setCorte(corte);
+          const reservaSection = document.getElementById("contacto");
+          reservaSection.scrollIntoView();
      }
 
      return (
-          <>
-               <div className={container}>
-                    <div className={gallery}>
-                         <div>
-                              <div className={galleryItem}>
-                                   <div className={divOrdenarCorte}>
-                                        <img className={galleryImage} src={lowFade} />
-                                        <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
-                                   </div>
-                                   <img className={galleryImage} src={lowFade2} />
+          <section className={container} id='cortes'>
+               <div className={gallery}>
+                    <div>
+                         <div className={galleryItem}>
+                              <div className={divOrdenarCorte}>
+                                   <img className={galleryImage} src={lowFade} />
+                                   <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
                               </div>
-                              <p>Low Fade</p>
+                              <img className={galleryImage} src={lowFade2} />
                          </div>
-
-                         <div>
-                              <div className={galleryItem}>
-                                   <div className={divOrdenarCorte}>
-                                        <img className={galleryImage} src={midFade} />
-                                        <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
-                                   </div>
-                                   <img className={galleryImage} src={midFade2} />
-                              </div>
-                              <p>Mid Fade</p>
-                         </div>
-
-                         <div>
-                              <div className={galleryItem}>
-                                   <div className={divOrdenarCorte}>
-                                        <img className={galleryImage} src={tapperFade} />
-                                        <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
-                                   </div>
-                                   <img className={galleryImage} src={tapperFade2} />
-                              </div>
-                              <p>Tapper Fade</p>
-                         </div>
-
-                         <div>
-                              <div className={galleryItem}>
-                                   <div className={divOrdenarCorte}>
-                                        <img className={galleryImage} src={burstFade} />
-                                        <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
-                                   </div>
-                                   <img className={galleryImage} src={burstFade2} />
-                              </div>
-                              <p>Burst Fade</p>
-                         </div>
-
-                         <div>
-                              <div className={galleryItem}>
-                                   <div className={divOrdenarCorte}>
-                                        <img className={galleryImage} src={lowFadeV} />
-                                        <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
-                                   </div>
-                                   <img className={galleryImage} src={lowFadeV2} />
-                              </div>
-                              <p>Low Fade en V</p>
-                         </div>
-
-                         <div>
-                              <div className={galleryItem}>
-                                   <div className={divOrdenarCorte}>
-                                        <img className={galleryImage} src={mohawk2} alt="" />
-                                        <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
-                                   </div>
-                                   <img className={galleryImage} src={mohawk} alt="" />
-                              </div>
-                              <p>Mohawk</p>
-                         </div>
-
+                         <p>Low Fade</p>
                     </div>
 
+                    <div>
+                         <div className={galleryItem}>
+                              <div className={divOrdenarCorte}>
+                                   <img className={galleryImage} src={midFade} />
+                                   <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
+                              </div>
+                              <img className={galleryImage} src={midFade2} />
+                         </div>
+                         <p>Mid Fade</p>
+                    </div>
+
+                    <div>
+                         <div className={galleryItem}>
+                              <div className={divOrdenarCorte}>
+                                   <img className={galleryImage} src={tapperFade} />
+                                   <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
+                              </div>
+                              <img className={galleryImage} src={tapperFade2} />
+                         </div>
+                         <p>Tapper Fade</p>
+                    </div>
+
+                    <div>
+                         <div className={galleryItem}>
+                              <div className={divOrdenarCorte}>
+                                   <img className={galleryImage} src={burstFade} />
+                                   <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
+                              </div>
+                              <img className={galleryImage} src={burstFade2} />
+                         </div>
+                         <p>Burst Fade</p>
+                    </div>
+
+                    <div>
+                         <div className={galleryItem}>
+                              <div className={divOrdenarCorte}>
+                                   <img className={galleryImage} src={lowFadeV} />
+                                   <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
+                              </div>
+                              <img className={galleryImage} src={lowFadeV2} />
+                         </div>
+                         <p>Low Fade en V</p>
+                    </div>
+
+                    <div>
+                         <div className={galleryItem}>
+                              <div className={divOrdenarCorte}>
+                                   <img className={galleryImage} src={mohawk2} alt="" />
+                                   <button className={ordenarCorte} onClick={clickBtnOrdenar}>Ordenar<img src={seasors} alt='Tijeras' /></button>
+                              </div>
+                              <img className={galleryImage} src={mohawk} alt="" />
+                         </div>
+                         <p>Mohawk</p>
+                    </div>
 
                </div>
-          </>
 
+
+          </section>
      )
 }

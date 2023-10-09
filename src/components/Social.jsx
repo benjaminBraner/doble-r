@@ -12,7 +12,7 @@ export const Social = () => {
      return (
           <div className={socialMediaContainer}>
                <p>FOLLOW DOBLE R</p>
-               <p>Mantente informado sobre colaboraciones, novedades y ofertas especiales que te ofrece el equipo de Doble R.</p>
+               <p>Mantente informado sobre novedades y ofertas especiales que te ofrece el equipo de Doble R.</p>
                <div className={card} >
                     <a
                          href="https://www.instagram.com/doble.eree/"
@@ -29,10 +29,6 @@ export const Social = () => {
                     >
                          <img src={tiktokLogo} className={socialSvg} />
                     </a>
-
-                    {/* <a href="#" className={`${socialContainer} ${containerThree}`}>
-                         <img src={facebookLogo} className={socialSvg} />
-                    </a> */}
 
                     <a
                          href="https://api.whatsapp.com/send?phone=59176852997"

@@ -12,8 +12,14 @@ import heroImg from '../assets/images/hero.jpeg'
 // import heroImg3 from '../assets/images/salah-regouane-rM_ev_MroKA-unsplash.jpg'
 
 export const Home = () => {
+
+     const clickReservaBtn = () => {
+          const reservaSection = document.getElementById("contacto");
+          reservaSection.scrollIntoView();
+     }
+
      return (
-          <main className={main}>
+          <main className={main} id='home'>
                <div className={hero}>
 
                     <img src={homeLeftImg} alt="" className={leftImg} />
@@ -26,7 +32,7 @@ export const Home = () => {
                     <div className={tituloCont}>
                          <h1>DOBLE R</h1>
                          <p><span>Estilo impecable</span> , <span>Confianza elevada</span></p>
-                         <button>Reserva</button>
+                         <button onClick={clickReservaBtn}>Reserva</button>
                     </div>
                </div>
           </main>

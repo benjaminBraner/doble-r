@@ -24,11 +24,21 @@ export const Reserva = () => {
 
      return (
           <>
-               <section className={contact} id="contact">
+               <section className={contact} id="contacto">
                     <div>
                          <h4>Reserva</h4>
                          <div className={formContainer}>
                               <form className={contactForm} onSubmit={enviarMensaje}>
+                                   <label htmlFor="fadeSelect">Tipo de corte</label>
+                                   <select className={`${fadeSelect} ${contactInput}`} name="corte" value={corte}>
+                                        <option value="Burst Fade">Burst Fade</option>
+                                        <option value="Low Fade">Low Fade</option>
+                                        <option value="Tapper Fade">Tapper Fade</option>
+                                        <option value="Low Fade en V">Low Fade en V</option>
+                                        <option value="Mid Fade">Mid Fade</option>
+                                        <option value="Mohawk">Mohawk</option>
+                                        <option value="Personalizado">Personalizado</option>
+                                   </select>
                                    <input
                                         type="text"
                                         placeholder="Nombre Completo"
@@ -55,16 +65,7 @@ export const Reserva = () => {
                                         id="hora"
                                         className={contactInput}
                                         name="hora" />
-                                   <label htmlFor="fadeSelect">Tipo de corte</label>
-                                   <select className={`${fadeSelect} ${contactInput}`} name="corte" value={corte}>
-                                        <option value="Burst Fade">Burst Fade</option>
-                                        <option value="Low Fade">Low Fade</option>
-                                        <option value="Taper Fade">Tapper Fade</option>
-                                        <option value="Low Fade en V">Low Fade en V</option>
-                                        <option value="Mid Fade">Mid Fade</option>
-                                        <option value="Mohawk">Mohawk</option>
-                                        <option value="Personalizado">Personalizado</option>
-                                   </select>
+
                                    <textarea
                                         name="preferencias"
                                         cols="30"
@@ -74,7 +75,7 @@ export const Reserva = () => {
                                         autoComplete='off'>
                                    </textarea>
                                    <input
-                                        value="Send"
+                                        value="Enviar"
                                         type="submit"
                                         className={`${contactInput} ${btnSendForm}`}
                                    />

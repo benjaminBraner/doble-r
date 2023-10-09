@@ -5,11 +5,15 @@ import dobleRLogo from '../assets/icons/logo.png'
 
 export const Navbar = () => {
 
+     const myElementRef = useRef(null);
+     const clickLogo = () => {
+          const reservaSection = document.getElementById("home");
+          reservaSection.scrollIntoView();
+     }
      const clickMenuIcon = () => {
           const menuWrapper = document.getElementById(`menuWrapper`);
           menuWrapper.classList.toggle(active);
      }
-     const myElementRef = useRef(null);
 
      useEffect(() => {
           const headerr = document.getElementById("header");
@@ -23,7 +27,7 @@ export const Navbar = () => {
           <>
                <header className={header} id='header' ref={myElementRef}>
                     <nav className={navbar}>
-                         <div className={logoCont}>
+                         <div className={logoCont} onClick={clickLogo}>
                               <img src={dobleRLogo} alt="R" />
                               <h3>DOBLE R</h3>
                          </div>
@@ -32,6 +36,7 @@ export const Navbar = () => {
                               <li>
                                    <a
                                         to='home'
+                                        href="#"
                                         exact='true'
                                         onClick={clickMenuIcon}
                                         className={navLink}
@@ -42,7 +47,7 @@ export const Navbar = () => {
                               </li>
                               <li>
                                    <a
-                                        href="/#sobre-nosotros"
+                                        href="/#cortes"
                                         onClick={clickMenuIcon}
                                         className={navLink}
                                    >
@@ -53,6 +58,7 @@ export const Navbar = () => {
                               <li>
                                    <a
                                         to='ubicion'
+                                        href="/#ubicacion"
                                         exact='true'
                                         onClick={clickMenuIcon}
                                         className={navLink}
@@ -64,6 +70,7 @@ export const Navbar = () => {
                               <li>
                                    <a
                                         to='contact'
+                                        href="/#contacto"
                                         exact='true'
                                         onClick={clickMenuIcon}
                                         className={navLink}
