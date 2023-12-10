@@ -69,8 +69,21 @@ export const Navbar = () => {
                               </li>
                               <li>
                                    <a
+                                        // to='home'
+                                        href="https://doubler-english.netlify.app"
+                                        exact='true'
+                                        // onClick={clickMenuIcon}
+                                        className={navLink}
+                                   >
+                                        English
+                                   </a>
+                                   <p>Visit the english version of Doble R</p>
+                              </li>
+                              <li>
+                                   <a
                                         to='contact'
                                         href="/#contacto"
+                                        id='btn-contacto'
                                         exact='true'
                                         onClick={clickMenuIcon}
                                         className={navLink}
@@ -79,6 +92,7 @@ export const Navbar = () => {
                                    </a>
                                    <p>Agenda una cita para tu corte</p>
                               </li>
+
                          </ul>
 
                          <img src={menuLogo} alt='menu' className={logoMenu} onClick={clickMenuIcon} />

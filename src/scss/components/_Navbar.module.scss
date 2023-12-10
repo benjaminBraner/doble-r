@@ -85,7 +85,8 @@
 
 
 .navMenu.active {
-     top: 86px;
+     top: 65px;
+     height: max-content;
 
      li {
           color: #000;
@@ -105,7 +106,7 @@
                color: #ccc;
           }
 
-          li:nth-child(4) {
+          li:last-child {
                a {
                     color: var(--nav-contact-color);
                }
@@ -131,23 +132,19 @@
 
                .navLink {
                     font-size: 20px;
-                    color: #fff;
                     color: #585757;
 
                }
           }
 
-          li:nth-child(4) {
+          li:last-child {
                border: 2px solid var(--primary-color);
                background-color: var(--primary-color);
                padding: 3px 30px;
                border-radius: 40px;
-
-               a {
-                    color: var(--nav-contact-color);
-               }
           }
      }
+
 
      .logoMenu {
           display: none;
