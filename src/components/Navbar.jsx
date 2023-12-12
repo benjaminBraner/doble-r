@@ -69,18 +69,6 @@ export const Navbar = () => {
                               </li>
                               <li>
                                    <a
-                                        // to='home'
-                                        href="https://doubler-english.netlify.app"
-                                        exact='true'
-                                        // onClick={clickMenuIcon}
-                                        className={navLink}
-                                   >
-                                        English
-                                   </a>
-                                   <p>Visit the english version of Doble R</p>
-                              </li>
-                              <li>
-                                   <a
                                         to='contact'
                                         href="/#contacto"
                                         id='btn-contacto'
